@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Jawad Admin</title><link rel="stylesheet" href="/admin.css"><script src="/admin.js" defer></script></head>
+<body>
+  <header><a href="/" class="brand">JAWAD<span>/</span>DEV <small>ADMIN</small></a><a href="/">← View portfolio</a></header>
+  <main>
+    <section class="panel login-panel" id="loginPanel"><p class="eyebrow">PRIVATE AREA</p><h1>Admin sign in</h1><p class="muted">Sign in to review contact messages and manage project cards.</p><form id="loginForm"><label>Username<input name="username" required autocomplete="username" value="Jawad"></label><label>Password<input name="password" type="password" required autocomplete="current-password" placeholder="Your admin password"></label><button>Sign in →</button><p class="status" id="loginStatus" role="status"></p></form><p class="hint">Set your credentials in the local <code>.env</code> file before using this panel.</p></section>
+    <section id="dashboard" hidden>
+      <div class="dash-head"><div><p class="eyebrow">WORKSPACE</p><h1>Good to see you.</h1></div><button class="secondary" id="logoutButton">Sign out</button></div>
+      <div class="tabs"><button class="tab active" data-tab="messages">Messages <span id="messageCount">0</span></button><button class="tab" data-tab="projects">Projects</button></div>
+      <section class="panel" id="messagesPanel"><div class="panel-head"><h2>Inbox</h2><button class="secondary" id="refreshMessages">Refresh</button></div><div id="messagesList" class="message-list"></div></section>
+      <section class="panel" id="projectsPanel" hidden><div class="panel-head"><h2>Projects</h2></div><form id="projectForm" class="project-form"><label>Project title<input name="title" required minlength="2" maxlength="100"></label><label>Category<select name="category"><option>Security</option><option>Creative</option><option>Tools</option><option>Design</option><option>Web</option></select></label><label>Description<textarea name="description" required minlength="8" maxlength="500"></textarea></label><label>Tech stack (comma-separated)<input name="stack" placeholder="HTML, CSS, JavaScript"></label><label>Live demo URL (optional)<input name="demo" type="url" placeholder="https://..."></label><label>Source code URL (optional)<input name="source" type="url" placeholder="https://github.com/..."></label><label class="check"><input type="checkbox" name="featured"> Featured project</label><button>Add project</button><p class="status" id="projectStatus" role="status"></p></form><div id="adminProjects" class="admin-projects"></div></section>
+    </section>
+  </main>
+</body>
+</html>

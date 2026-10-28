@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090711">
+  <meta name="description" content="Jawad — developer portfolio, selected projects and digital services.">
+  <title>Jawad — Digital Experiences</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Jawad home"><span class="brand-mark">J.</span><span>JAWAD<span class="brand-dot">/</span>DEV</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav id="nav">
+      <a href="#about">About</a><a href="#work">Selected work</a><a href="#services">Services</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="availability" href="#contact"><span class="status-dot"></span> Available for projects</a>
+  </header>
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="eyebrow-line"></span> INDEPENDENT DEVELOPER <span class="mono">/ 2026</span></div>
+        <h1>I turn ideas into<br><span class="gradient-text">digital experiences.</span></h1>
+        <p class="hero-lede">I’m Jawad — a developer exploring the space between thoughtful design, useful technology and bold digital products.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#work">Explore my work <span>↗</span></a><a class="text-link" href="#contact">Let’s talk <span>↗</span></a></div>
+        <div class="hero-meta"><div><span class="meta-number">01</span><span>Design with intent</span></div><div><span class="meta-number">02</span><span>Build for real people</span></div></div>
+      </div>
+      <div class="hero-art reveal" aria-label="Abstract purple 3D artwork">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div>
+        <div class="orb-core"><span>J</span></div><div class="floating-tag tag-top">CREATIVE CODE <span>✳</span></div><div class="floating-tag tag-bottom"><span class="status-dot"></span> BUILDING SOMETHING GOOD</div>
+        <div class="art-cross cross-one">+</div><div class="art-cross cross-two">✳</div>
+      </div>
+      <div class="scroll-cue"><span></span> SCROLL TO EXPLORE</div>
+    </section>
+    <section class="ticker" aria-label="Skills ticker"><div class="ticker-track"><span>FRONTEND DEVELOPMENT ✳</span><span>INTERACTIVE DESIGN ✳</span><span>CREATIVE TECHNOLOGY ✳</span><span>FULL-STACK THINKING ✳</span><span>FRONTEND DEVELOPMENT ✳</span><span>INTERACTIVE DESIGN ✳</span><span>CREATIVE TECHNOLOGY ✳</span><span>FULL-STACK THINKING ✳</span></div></section>
+    <section class="section-wrap section-block" id="about">
+      <div class="section-heading reveal"><p class="eyebrow">01 / A LITTLE ABOUT ME</p><h2>Curiosity first.<br><span class="muted">Craft always.</span></h2></div>
+      <div class="about-grid"><p class="about-lede reveal">Good digital work should feel clear, fast and a little bit magical. I care about the details people notice — and the invisible details they don’t.</p><div class="about-detail reveal"><p>I’m building my skills across web development, interface design and practical software projects. My approach is simple: understand the problem, keep the experience focused, and make every interaction earn its place.</p><a class="text-link" href="#contact">Have an idea? Let’s build it <span>↗</span></a></div></div>
+      <div class="stats-row reveal"><div><strong>03<span>+</span></strong><small>Selected builds</small></div><div><strong>06<span>+</span></strong><small>Tools explored</small></div><div><strong>100<span>%</span></strong><small>Curiosity mode</small></div><div class="stats-note">Always learning.<br>Always shipping.</div></div>
+    </section>
+    <section class="section-wrap section-block work-section" id="work">
+      <div class="section-heading section-heading-row reveal"><div><p class="eyebrow">02 / SELECTED WORK</p><h2>Things I’ve <span class="gradient-text">made.</span></h2></div><p class="heading-note">A few experiments and builds.<br>More work is always in progress.</p></div>
+      <div class="filter-row reveal" id="filters"><button class="filter active" data-filter="All">All projects <span>03</span></button><button class="filter" data-filter="Security">Security</button><button class="filter" data-filter="Creative">Creative</button><button class="filter" data-filter="Tools">Tools</button></div>
+      <div class="project-grid" id="projectGrid"><div class="loading-card">Loading selected work<span>...</span></div></div>
+    </section>
+    <section class="section-wrap section-block services-section" id="services">
+      <div class="section-heading reveal"><p class="eyebrow">03 / WHAT I CAN HELP WITH</p><h2>From first sketch<br>to <span class="gradient-text">live product.</span></h2></div>
+      <div class="service-list">
+        <article class="service-item reveal"><span class="service-num">01</span><div><h3>Web experiences</h3><p>Responsive, accessible websites that communicate clearly and feel polished on every screen.</p></div><span class="service-icon">↗</span></article>
+        <article class="service-item reveal"><span class="service-num">02</span><div><h3>Interactive interfaces</h3><p>Micro-interactions, motion and useful details that make a product easier and more memorable to use.</p></div><span class="service-icon">✳</span></article>
+        <article class="service-item reveal"><span class="service-num">03</span><div><h3>Prototype to product</h3><p>Turn an early concept into a working prototype, then improve it with real feedback.</p></div><span class="service-icon">⌘</span></article>
+      </div>
+    </section>
+    <section class="contact-section" id="contact"><div class="section-wrap contact-grid"><div class="contact-copy reveal"><p class="eyebrow">04 / YOUR TURN</p><h2>Have a good idea?<br><span class="gradient-text">Let’s make it real.</span></h2><p>Tell me what you’re thinking. A short note is enough to start a conversation.</p><div class="contact-direct"><span class="status-dot"></span> Open to thoughtful collaborations</div></div>
+      <form id="contactForm" class="contact-form reveal"><label>Your name<input name="name" required minlength="2" maxlength="80" placeholder="What should I call you?"></label><label>Email address<input type="email" name="email" required maxlength="160" placeholder="you@example.com"></label><label>Subject <span class="optional">(optional)</span><input name="subject" maxlength="120" placeholder="A project, an idea, a question..."></label><label>Message<textarea name="message" required minlength="10" maxlength="2000" rows="4" placeholder="A little about what you have in mind..."></textarea></label><label class="honeypot" aria-hidden="true">Leave this field empty<input name="website" tabindex="-1" autocomplete="off"></label><button class="button button-primary submit-button" type="submit">Send message <span>↗</span></button><p class="form-status" id="formStatus" role="status"></p></form>
+    </div></section>
+  </main>
+  <footer class="footer"><div class="section-wrap footer-inner"><a class="brand" href="#home"><span class="brand-mark">J.</span><span>JAWAD<span class="brand-dot">/</span>DEV</span></a><p>Designed with intent. Built with curiosity.</p><div><a href="#home">Back to top ↑</a><a href="/admin">Admin ↗</a></div><small>© <span id="year"></span> Jawad. All rights reserved.</small></div></footer>
+</body>
+</html>
